@@ -1,15 +1,10 @@
 import React from 'react'
-import styled from 'styled-components'
-
+import User from './User'
 export default function NavBar() {
   return (
-    <NavBarWrapper>
-      Navbar
-    </NavBarWrapper>
+    <div>
+      <User/>
+    </div>
   )
 }
 
-const NavBarWrapper=styled.div`
-width:100vw;
-height:7vh;
-`;

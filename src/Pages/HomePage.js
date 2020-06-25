@@ -1,11 +1,9 @@
 import React from 'react'
 
-export default function Priority() {
-
+export default function HomePage() {
   return (
     <div>
-      <div>Low</div>
+      HomePage
     </div>
   )
 }
-

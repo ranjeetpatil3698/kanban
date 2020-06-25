@@ -1,11 +1,9 @@
 import React from 'react'
 
-export default function Priority() {
-
+export default function DashBoard() {
   return (
     <div>
-      <div>Low</div>
+      DashBoard Page
     </div>
   )
 }
-
