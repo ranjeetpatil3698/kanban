@@ -5,7 +5,7 @@ import TaskBoard from './TaskBoard';
 
 export default function BoardWrapper() {
   return (
-      <Flex fontFamily='Source Sans Pro'>
+      <Flex fontFamily='Source Sans Pro' backgroundColor="gray.500">
       <TaskBoard>
         <Task/>
         <Task/>

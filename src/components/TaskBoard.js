@@ -1,11 +1,11 @@
 import React from 'react'
 import { Box,Flex} from "@chakra-ui/core";
-import ColumnHeading from './ColumnHeading';
+import EditableInput from './EditableInput';
 
 export default function TaskBoard(props) {
   return (
     <Box as="div" backgroundColor="gray.200" maxW="205px" p="2" rounded="sm" overflow="hidden" borderStyle="dashed" m="2" borderColor="gray.600">
-      <ColumnHeading value="Board Name"/>
+      <EditableInput value="Board Name"/>
       <Flex flexDirection="column" justifyContent="center" alignContent="center">
       {props.children}
       </Flex>

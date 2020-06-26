@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box ,Badge,Avatar,AvatarGroup} from "@chakra-ui/core";
 //TODO:add svg icon addMember at + button
-import ColumnHeading from './ColumnHeading';
+import EditableInput from './EditableInput';
 
 
 export default function Task(props) {  
@@ -21,7 +21,7 @@ export default function Task(props) {
           lineHeight="tight"
           isTruncated
         >
-          <ColumnHeading value={property.title}/>
+          <EditableInput value={property.title}/>
         </Box>
         <AvatarGroup size="sm" max={2} m="1">
         <Avatar name="Ryan Florence" src="https://bit.ly/ryan-florence" />
