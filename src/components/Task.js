@@ -1,14 +1,16 @@
 import React from 'react';
 import { Box ,Badge,Avatar,AvatarGroup} from "@chakra-ui/core";
 //TODO:add svg icon addMember at + button
-export default function Task(props) {  
+import ColumnHeading from './ColumnHeading';
 
+
+export default function Task(props) {  
   const property={
     title:'This is task'
   }
 
   return (
-    <Box  borderWidth="1px" rounded="lg" overflow="hidden" as="div" backgroundColor="gray.100" boxShadow="md" width="48">
+    <Box  borderWidth="1px" m="1" rounded="lg" overflow="hidden" as="div" backgroundColor="gray.100" boxShadow="md" width="48">
       <Box p="3">
       <Badge rounded="full" px="2" variantColor="teal">
             low
@@ -19,7 +21,7 @@ export default function Task(props) {
           lineHeight="tight"
           isTruncated
         >
-          {property.title}
+          <ColumnHeading value={property.title}/>
         </Box>
         <AvatarGroup size="sm" max={2} m="1">
         <Avatar name="Ryan Florence" src="https://bit.ly/ryan-florence" />
