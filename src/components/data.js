@@ -20,6 +20,26 @@ const initialData = {
       priority: ["red", "high"],
       content: "render an app",
     },
+    "task-5": {
+      id: "task-5",
+      priority: ["teal", "low"],
+      content: "make an omlete",
+    },
+    "task-6": {
+      id: "task-6",
+      priority: ["red", "high"],
+      content: "do homework",
+    },
+    "task-7": {
+      id: "task-7",
+      priority: ["purple", "medium"],
+      content: "build a component",
+    },
+    "task-8": {
+      id: "task-8",
+      priority: ["red", "high"],
+      content: "render an app",
+    },
   },
   columns: {
     "column-1": {
@@ -30,7 +50,7 @@ const initialData = {
     "column-2": {
       id: "column-2",
       title: "done",
-      taskIds: ["task-1", "task-2", "task-3", "task-4"],
+      taskIds: ["task-5", "task-6", "task-7", "task-8"],
     },
   },
   columnOrder: ["column-1", "column-2"],

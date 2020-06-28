@@ -6,7 +6,9 @@ import TaskBoard from "./TaskBoard";
 import initialData from "./data";
 export default function BoardWrapper() {
   const [data, setData] = useState(initialData);
-  const dragEnd = () => {};
+  const dragEnd = (result) => {
+    console.log(result);
+  };
   return (
     <Flex
       fontFamily="Source Sans Pro"

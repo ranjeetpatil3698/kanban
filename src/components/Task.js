@@ -20,12 +20,16 @@ export default function Task(props) {
           backgroundColor="gray.100"
           boxShadow="md"
           width="48"
-          {...provided.dragHandleProps}
-          {...provided.dragHandleProps}
+          {...provided.draggableProps}
           ref={provided.innerRef}
         >
           <Box p="3">
-            <Badge rounded="full" px="2" variantColor={props.task.priority[0]}>
+            <Badge
+              rounded="full"
+              px="2"
+              variantColor={props.task.priority[0]}
+              {...provided.dragHandleProps}
+            >
               {props.task.priority[1]}
             </Badge>
             <Box mt="3" as="h4" lineHeight="tight" isTruncated>
